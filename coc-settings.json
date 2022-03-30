@@ -1,0 +1,24 @@
+{
+  //"languageserver": {
+  //    "golang": {
+  //        "command": "gopls",
+  //        "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+  //        "filetypes": ["go"],
+  //        "initializationOptions": {
+  //            "usePlaceholders": true
+  //        }
+  //    }
+  //},
+  "godot.enable": true, //暂时
+  "godot.lsp_server_port": 6008,
+  "suggest.enablePreview": true,
+  "suggest.triggerAfterInsertEnter": true,
+  "go.goplsOptions": {
+    "usePlaceholders": true,
+    "gofumpt": false
+  },
+  "git.enableGutters": false,
+  "explorer.icon.source": "builtin",
+  "explorer.icon.enableNerdfont": true,
+  "explorer.mouseMode": "singleclick"
+}
