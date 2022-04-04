@@ -1,6 +1,9 @@
 return require('packer').startup(function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+
+	-- lsp config
+	use 'neovim/nvim-lspconfig'
     -- gruvbox theme
     use {
         'ellisonleao/gruvbox.nvim',
@@ -25,7 +28,7 @@ return require('packer').startup(function()
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
     -- 补全
-    use {'neoclide/coc.nvim', branch = 'release'}
+	 use {'neoclide/coc.nvim', branch = 'release'}
 
 	-- 高亮
     use {
@@ -54,6 +57,21 @@ return require('packer').startup(function()
 	-- color theme
     use 'folke/tokyonight.nvim'
 
-	-- 单词调整
+	-- 单词跳转
 	use { 'phaazon/hop.nvim', branch = 'v1' }
+	use { 'liuchengxu/vista.vim', branch = 'master' }
+	use 'mfussenegger/nvim-dap'
+	-- use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+   --  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
+    -- use 'hrsh7th/cmp-cmdline' -- LSP source for nvim-cmp
+    -- use 'hrsh7th/cmp-path' -- LSP source for nvim-cmp
+    -- use 'hrsh7th/cmp-buffer' -- LSP source for nvim-cmp
+	-- use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
+    -- use 'L3MON4D3/LuaSnip' -- Snippets plugin
+     --use 'windwp/nvim-autopairs' -- Snippets plugin
+	 --use 'ray-x/lsp_signature.nvim'
+	 -- use 'onsails/lspkind-nvim'
+     -- use 'hrsh7th/cmp-vsnip'    -- { name = 'vsnip' }
+     -- use 'hrsh7th/vim-vsnip' 
+	-- use 'hrsh7th/cmp-path'
 end)

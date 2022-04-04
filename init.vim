@@ -4,6 +4,10 @@ lua require('keybinding')
 
 " lua plugins
 lua require('plugins')
+"lua require('plugins/nvim-lspconfig')
+"lua require('plugins/nvim-cmp')
+"lua require('plugins/lsp/lsp-go')
+"lua require('plugins/lsp-signature')
 lua require('plugins/nvim-tree')
 lua require('plugins/nvim-treesitter')
 lua require('plugins/bufferline')
@@ -11,12 +15,14 @@ lua require('plugins/telescope')
 lua require('plugins/lualine')
 lua require('plugins/toggleterm')
 lua require('plugins/indent-blankline')
+"lua require('plugins/nvim-autopairs')
 lua require('plugins/hop')
 
 " vim
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/core/base.vim'
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/core/nvim-tree.vim'
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/core/coc.vim'
+execute 'source' fnamemodify(expand('<sfile>'), ':h').'/core/vista.vim'
 
 "TODO coc 是否支持 GoImplement 跳转接口实现 OK (gi)
 "TODO 文件树与标签页的联动 (定位文件位置) OK (NvimTreeFindFile)
@@ -35,9 +41,7 @@ execute 'source' fnamemodify(expand('<sfile>'), ':h').'/core/coc.vim'
 "TODO coc-go 与 直接gopls 功能重复了，选一种
 
 " colorscheme
-set termguicolors
-set background=dark
 "colorscheme nord
-colorscheme zephyr
 "colorscheme tokyonight
 "colorscheme gruvbox
+"
