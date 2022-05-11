@@ -1,6 +1,7 @@
 set rnu
 set nu
-set tabstop=4
+set ts=4
+set expandtab
 set softtabstop=4
 set shiftwidth=4
 set autoindent
@@ -15,4 +16,7 @@ colorscheme zephyr
 inoremap jk <ESC>
 inoremap <ESC> <C-\><C-n>
 
-let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
+autocmd InsertLeave * :silent !fcitx5-remote -c " 退出插入模式时禁用输入法
+autocmd BufCreate *  :silent !fcitx5-remote -c " 创建 Buf 时禁用输入法
+autocmd BufEnter *  :silent !fcitx5-remote -c " 进入 Buf 时禁用输入法
+autocmd BufLeave *  :silent !fcitx5-remote -c " 离开 Buf 时禁用输入法

@@ -61,6 +61,8 @@ return require('packer').startup(function()
 	use { 'phaazon/hop.nvim', branch = 'v1' }
 	use { 'liuchengxu/vista.vim', branch = 'master' }
 	use 'mfussenegger/nvim-dap'
+    use {'mg979/vim-visual-multi', branch= 'master'}
+
 	-- use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
    --  use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
     -- use 'hrsh7th/cmp-cmdline' -- LSP source for nvim-cmp
